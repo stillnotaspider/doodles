@@ -132,7 +132,7 @@ class C {
 }
 
 function setup() {
-    createCanvas(w,h);
+    createCanvas(2*w,2*h);
     noStroke();
     frameRate(60);
     background(255);
@@ -164,8 +164,8 @@ function mousePressed() {
 }
 
 function spawn() {
-    var x = int(random(R_max+10,w-R_max-10));
-    var y = int(random(R_max+10,h-R_max-10));
+    var x = int(random(R_max+10,2*w-R_max-10));
+    var y = int(random(R_max+10,2*h-R_max-10));
     var r = R_max;    
     var col_r=0, col_g=0, col_b=0;
     var n = 0;
@@ -187,7 +187,7 @@ function spawn() {
 //        col_r = int(random(10,275))%255;
 //        col_g = int(random(20,275))%255;
 //        col_b = int(random(20,275))%255;
-            let col = random(colours);
+            let col = random(more_colours);
             col_r = col.r;
             col_g = col.g;
             col_b = col.b;
