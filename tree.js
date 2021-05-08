@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
     background(255);
-    tree(10,200,w/2,(PI/2)*(mouseX/w),0,10 + 20*(mouseY/h),80,80,80);
+    tree(10,200,w/2,(PI/2)*(mouseX/w),0,50 + 20*(mouseY/h),80,80,80);
 }
 
 function mousePressed() {
