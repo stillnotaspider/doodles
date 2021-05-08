@@ -35,6 +35,6 @@ function tree(n,x,y,theta,psi,l,r,g,b) {
     line(y,x,y1,x1);
     stroke(0,g2,b2,230);
     line(y,x,y2,x2);
-    tree(n-1,x1,y1,theta,psi+theta,l,r1,g1,b1);
-    tree(n-1,x2,y2,theta,psi-theta,l,r2,g2,b2);
+    tree(n-1,x1,y1,theta,psi+theta,l*0.8,r1,g1,b1);
+    tree(n-1,x2,y2,theta,psi-theta,l*0.8,r2,g2,b2);
 }
